@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>롯데렌터카 비즈카</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/bizcar.css">
+</head>
+<body>
+    <header class="w100">
+        <div class="w1400 head_wrap">
+            <h1><a href=""><img src="img/logo_bizcar.png" alt=""></a></h1>
+            <p>로그인하시면 더 많은 서비스를 이용하실 수 있습니다.</p>
+            <ul>
+                <li><a class="login" href="">로그인</a></li>
+                <li>|</li>
+                <li><a class="contract" href="">법인 심사자료 제출</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <nav class="w100">
+        <div class="nav_wrap">
+            <div class="w1400 navs">
+                <ul class="gnb">
+                    <li class="gnb_main">
+                        <a href="#">마이페이지</a>
+                        <ul class="submenu">
+                            <li><a href="#">마이페이지 홈</a></li>
+                            <li><a href="#">기본 정보 관리</a></li>
+                            <li><a href="#">계약관리</a></li>
+                            <li><a href="#">차량정비</a></li>
+                            <li><a href="#">쿠폰함</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnb_main">
+                        <a href="#">비즈카</a>
+                        <ul class="submenu">
+                            <li><a href="#">비즈카 안내</a></li>
+                            <li><a href="#">온라인 견적</a></li>
+                            <li><a href="#">비즈카 기획전</a></li>
+                            <li><a href="#">중고차 렌트</a></li>
+                            <li><a href="#">단기렌터카 예약</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnb_main">
+                        <a href="#">커넥트프로</a>
+                        <ul class="submenu">
+                            <li><a href="#">서비스 안내</a></li>
+                            <li><a href="#">대시보드</a></li>
+                            <li><a href="#">예약/배차</a></li>
+                            <li><a href="#">운행/차량관제</a></li>
+                            <li><a href="#">운행분석</a></li>
+                            <li><a href="#">환경설정</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnb_main">
+                        <a href="#">멤버십 혜택</a>
+                        <ul class="submenu">
+                            <li><a href="#">멤버십 안내</a></li>
+                            <li><a href="#">멤버십 플러스 즐기기</a></li>
+                            <li><a href="#">지인추천</a></li>
+                            <li><a href="#">기획전/이벤트</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnb_main">
+                        <a href="#">산업재렌탈</a>
+                        <ul class="submenu">
+                            <li><a href="#">OA기기</a></li>
+                            <li><a href="#">물류장비</a></li>
+                            <li><a href="#">측정기</a></li>
+                            <li><a href="#">AI로봇</a></li>
+                            <li><a href="#">견적문의</a></li>
+                            <li><a href="#">중고자산 매각문의</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnb_main">
+                        <a href="#">고객지원</a>
+                        <ul class="submenu">
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">A/S안내</a></li>
+                            <li><a href="#">매뉴얼/SW</a></li>
+                            <li><a href="#">비즈니스/상품제안</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="search_wrap">
+                    <li class="search">
+                        <img src="img/search.JPG" alt="">
+                        <div class="search_hide">
+                            <form>
+                                <input type="text" placeholder="상품명(모델명)을 입력하세요">
+                                <button class="btn_search"></button>
+                                <div class="btn_close"></div>
+                            </form>
+                        </div>
+                    </li>
+                    <li class="ham_btn">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="w100 ham_subs">
+                <div>
+                    <ul>
+                        <li><a href="#">마이페이지 홈</a></li>
+                        <li><a href="#">기본 정보 관리</a></li>
+                        <li><a href="#">계약관리</a></li>
+                        <li><a href="#">차량정비</a></li>
+                        <li><a href="#">쿠폰함</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">비즈카 안내</a></li>
+                        <li><a href="#">온라인 견적</a></li>
+                        <li><a href="#">비즈카 기획전</a></li>
+                        <li><a href="#">중고차 렌트</a></li>
+                        <li><a href="#">단기렌터카 예약</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">서비스 안내</a></li>
+                        <li><a href="#">대시보드</a></li>
+                        <li><a href="#">예약/배차</a></li>
+                        <li><a href="#">운행/차량관제</a></li>
+                        <li><a href="#">운행분석</a></li>
+                        <li><a href="#">환경설정</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">멤버십 안내</a></li>
+                        <li><a href="#">멤버십 플러스 즐기기</a></li>
+                        <li><a href="#">지인추천</a></li>
+                        <li><a href="#">기획전/이벤트</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">OA기기</a></li>
+                        <li><a href="#">물류장비</a></li>
+                        <li><a href="#">측정기</a></li>
+                        <li><a href="#">AI로봇</a></li>
+                        <li><a href="#">견적문의</a></li>
+                        <li><a href="#">중고자산 매각문의</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">A/S안내</a></li>
+                        <li><a href="#">매뉴얼/SW</a></li>
+                        <li><a href="#">비즈니스/상품제안</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+        <div class="sub_bg"></div>
+    </nav>
+
+    <main>
+        <section class="w100 sec1">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide1">
+                        <a href="">
+                            <div class="w1400">
+                                <img class="img" src="img/hyolee.png" alt="hyolee image">
+                                <img class="txt" src="img/hyolee_title.png" alt="비즈카를 탄다. 성공이 보인다.">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide slide2">
+                        <a href="">
+                            <div class="w1400">
+                                <h2>Biz car, Big success</h2>
+                                <p>비즈카를 만나면, <br> 당신의 성공은 시작됩니다.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide slide3">
+                        <a href="">
+                            <div class="w1400">
+                                <h2>Care</h2>
+                                <p>정비상품 세분화(선택의 폭 확대)로 <br>고객 맞춤형 관리 서비스 제공</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide slide4">
+                        <a href="">
+                            <div class="w1400">
+                                <h2>Saving</h2>
+                                <p>차량관리, 회계처리등의 시간(Time)절약과 <br> 세제혜택, 운영비 절감등의 비용(Money)절약</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide slide5">
+                        <a href="">
+                            <div class="w1400">
+                                <h2>Customizing</h2>
+                                <p>이용 용도에 맞춘 차량 랩핑과 <br> 특장에 대한 원스톱 서비스 제공</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <section class="w1400 sec2">
+            <article>
+                <ul>
+                    <li><a href="">
+                        <div><img src="img/ani_customer01.png" alt=""></div>
+                        <p>비즈카 견적상담</p>
+                    </a></li>
+                    <li><a href="">
+                        <div><img src="img/ico_rmSiteMenu_direct.png" alt=""></div>
+                        <p>온라인 견적</p>
+                    </a></li>
+                    <li><a href="">
+                        <div><img src="img/ico_rmSiteMenu_newCar.png" alt=""></div>
+                        <p>비즈카 기획전</p>
+                    </a></li>
+                    <li><a href="">
+                        <div><img src="img/ico_rmSiteMenu_usedCar.png" alt=""></div>
+                        <p>중고차 렌트</p>
+                    </a></li>
+                    <li><a href="">
+                        <div><img src="img/ico_rmSiteMenu_reservation.png" alt=""></div>
+                        <p>출장/여행</p>
+                    </a></li>
+                    <li><a href="">
+                        <div><img src="img/ico_rmSiteMenu_mgm.png" alt=""></div>
+                        <p>지인추천</p>
+                    </a></li>
+                    <li><a href="">
+                        <div><img src="img/ico_rmSiteMenu_contract.png" alt=""></div>
+                        <p>전자계약</p>
+                    </a></li>
+                </ul>
+            </article>
+        </section>
+        <section class="w100 sec3">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/20231219132556.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="img/20240131090431.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="img/20240103094522.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="img/20240305184852.png" alt=""></div>
+                    <div class="swiper-slide"><img src="img/20240215145133.jpg" alt=""></div>
+                    
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <section class="w1400 sec4">
+            <h2 class="main_tit">대표님 선호도 1위, 제네시스 추천!</h2>
+            <article>
+                <figure>
+                    <div><img src="img/20231219131000.png" alt=""></div>
+                    <figcaption>
+                        <h3>제네시스 G90</h3>
+                        <p>3.5T 19"다이아몬드/SDS/포지드카본 4WD (가솔린)</p>
+                        <div>
+                            <ul>
+                                <li class="price">월 <b>202.3</b>만원</li>
+                                <!-- b는 두껍게 만들어주는 태그 -->
+                                <li class="red_btn">상담신청</li>
+                            </ul>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <div><img src="img/20231219140130.png" alt=""></div>
+                    <figcaption>
+                        <h3>제네시스 G80</h3>
+                        <p>2.5T 19"디쉬타입/기본 4WD(가솔린)</p>
+                        <div>
+                            <ul>
+                                <li class="price">월 <b>104.5</b>만원</li>
+                                <li class="red_btn">상담신청</li>
+                            </ul>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <div><img src="img/20231219140224.png" alt=""></div>
+                    <figcaption>
+                        <h3>제네시스 GV80</h3>
+                        <p>2.5T 19"/SDSI 4WD (가솔린)</p>
+                        <div>
+                            <ul>
+                                <li class="price">월 <b>133.8</b>만원</li>
+                                <li class="red_btn">상담신청</li>
+                            </ul>
+                        </div>
+                    </figcaption>
+                </figure>
+            </article>
+            <p>* 48개월 , 보증금 30% , 약정거리 2만km/년 , 실속정비</p>
+            <div><img src="img/20231219145451.png" alt=""></div>
+        </section>
+        <section class="w100 sec5">
+            <h2 class="main_tit">전기차?가솔린? 고민될 땐 하이브리드!</h2>
+            <article class="w1400">
+                <div class="car1">
+                    <figure>
+                        <div><img src="img/20231219141050.png" alt=""></div>
+                        <figcaption>
+                            <h3>현대 그랜저</h3>
+                            <p>1.6T 프리미엄 (하이브리드)</p>
+                            <ul>
+                                <li class="price">월 <b>62.5</b>만원</li>
+                                <li class="red_btn">상담신청</li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="car2">
+                    <figure>
+                        <div><img src="img/20231219142559 (2).png" alt=""></div>
+                        <figcaption>
+                            <h3>기아 쏘렌토</h3>
+                            <p>1.6T 프레스티지 (하이브리드)</p>
+                            <ul>
+                                <li class="price">월 <b>63.6</b>만원</li>
+                                <li class="red_btn">상담신청</li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="car3">
+                    <figure>
+                        <div><img src="img/20231219141952.png" alt=""></div>
+                        <figcaption>
+                            <h3>기아 카니발</h3>
+                            <p>1.6 프레스티지 9인 (하이브리드)</p>
+                            <ul>
+                                <li class="price">월 <b>60.9</b>만원</li>
+                                <li class="red_btn">상담신청</li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="car4">
+                    <figure>
+                        <div><img src="img/20231219141138.png" alt=""></div>
+                        <figcaption>
+                            <h3>현대 싼타페</h3>
+                            <p>1.6 프레스티지 (하이브리드)</p>
+                            <ul>
+                                <li class="price">월 <b>61.4</b>만원</li>
+                                <li class="red_btn">상담신청</li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="car5">
+                    <figure>
+                        <div><img src="img/20231219141231.png" alt=""></div>
+                        <figcaption>
+                            <h3>기아 니로</h3>
+                            <p>1.6 프레스티지 (하이브리드)</p>
+                            <ul>
+                                <li class="price">월 <b>51.2</b>만원</li>
+                                <li class="red_btn">상담신청</li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="car6">
+                    <img src="img/20240116190052.png" alt="">
+                </div>
+            </article>
+            <p class="w1400">* 48개월 , 보증금 30% , 약정거리 2만km/년 , 실속정비</p>
+        </section>
+        <section class="w1400 sec6">
+            <h2 class="main_tit">월대여료가 저렴한 60개월 렌터카!</h2>
+            <div class="top_box"><span>전체보기</span></div>
+            <article>
+                <figure>
+                    <div><img src="img/20231219140330.png" alt=""></div>
+                    <figcaption>
+                        <h3>기아 레이</h3>
+                        <p>1.0 프레스티지 (가솔린)</p>
+                        <ul>
+                            <li class="price">월 <b>30.8</b> 만원</li>
+                            <li class="red_btn">상담신청</li>
+                        </ul>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <div><img src="img/20231219140432.png" alt=""></div>
+                    <figcaption>
+                        <h3>현대 아반떼</h3>
+                        <p>1.6 모던 (가솔린)</p>
+                        <ul>
+                            <li class="price">월 <b>38.9</b> 만원</li>
+                            <li class="red_btn">상담신청</li>
+                        </ul>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <div><img src="img/20231219140637.png" alt=""></div>
+                    <figcaption>
+                        <h3>기아 스포티지</h3>
+                        <p>1.6T 프레스티지 (가솔린)</p>
+                        <ul>
+                            <li class="price">월 <b>48.3</b> 만원</li>
+                            <li class="red_btn">상담신청</li>
+                        </ul>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <div><img src="img/20231219140536.png" alt=""></div>
+                    <figcaption>
+                        <h3>현대 쏘나타</h3>
+                        <p>2.0 프리미엄 (가솔린)</p>
+                        <ul>
+                            <li class="price">월 <b>48.4</b> 만원</li>
+                            <li class="red_btn">상담신청</li>
+                        </ul>
+                    </figcaption>
+                </figure>
+            </article>
+            <p>* 60개월 , 보증금 30% , 약정거리 2만km/년 , 실속정비</p>
+        </section>
+        <section class="w100 sec7">
+            <h2 class="main_tit">산업재렌탈 추천상품</h2>
+            <div class="w1400 top_box">
+                <ul>
+                    <li class="list">OA기기</li>
+                    <li class="list">물류장비</li>
+                    <li class="list">측정기</li>
+                    <li class="list">AI로봇</li>
+                </ul>
+                <span>전체보기</span>
+            </div>
+            <article>
+                <div class="swiper">
+                    <div class="w1400 swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="OA"><a href="">
+                                <div><img src="img/20210913174543.jpg" alt=""></div>
+                                <h3>LG 그램</h3>
+                                <h4>별도 문의</h4>
+                            </a></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="OA"><a href="">
+                                <div><img src="img/20210913170109.jpg" alt=""></div>
+                                <h3>삼성 갤럭시북 Pro 360</h3>
+                                <h4>별도 문의</h4>
+                            </a></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="OA"><a href="">
+                                <div><img src="img/20210913205621.jpg" alt=""></div>
+                                <h3>LG 데스크탑 슬림형</h3>
+                                <h4>별도 문의</h4>
+                            </a></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="OA"><a href="">
+                                <div><img src="img/20210927160134.jpg" alt=""></div>
+                                <h3>MacBook Pro 13형</h3>
+                                <h4>별도 문의</h4>
+                            </a></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="OA"><a href="">
+                                <div><img src="img/20210927160408.jpg" alt=""></div>
+                                <h3>iMac 24형</h3>
+                                <h4>별도 문의</h4>
+                            </a></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="OA"><a href="">
+                                <div><img src="img/20210927161923.jpg" alt=""></div>
+                                <h3>iPad Air</h3>
+                                <h4>별도 문의</h4>
+                            </a></div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </article>
+            <article>
+                <div class="swiper">
+                    <div class="w1400 swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="OA"><a href="">
+                                <div><img src="img/20210907210035.png" alt=""></div>
+                                <h3>클라크 좌승식 지게차</h3>
+                                <h4>월550,000원</h4>
+                            </a></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="OA"><a href="">
+                                <div><img src="img/20210914105206.PNG" alt=""></div>
+                                <h3>토요타 입승식 지게차</h3>
+                                <h4>월450,000원</h4>
+                            </a></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="OA"><a href="">
+                                <div><img src="img/20210914141817.PNG" alt=""></div>
+                                <h3>HELI 리튬 핸드파렛트</h3>
+                                <h4>월200,000원</h4>
+                            </a></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="OA"><a href="">
+                                <div><img src="img/20210913190955.PNG" alt=""></div>
+                                <h3>작업높이 7.9M~10.0M</h3>
+                                <h4>월2,500,000원</h4>
+                            </a></div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </article>
+            <article>
+                <div class="swiper">
+                    <div class="w1400 swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="OA"><a href="">
+                                <div><img src="img/20230526100117.PNG" alt=""></div>
+                                <h3>MS2090A</h3>
+                                <h4>별도 문의</h4>
+                            </a></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="OA"><a href="">
+                                <div><img src="img/20230526092424.PNG" alt=""></div>
+                                <h3>MTTPlus 410+</h3>
+                                <h4>별도 문의</h4>
+                            </a></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="OA"><a href="">
+                                <div><img src="img/20230525182919.png" alt=""></div>
+                                <h3>MSOX4154A</h3>
+                                <h4>별도 문의</h4>
+                            </a></div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </article>
+            <article>
+                <div class="swiper">
+                    <div class="w1400 swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="OA"><a href="">
+                                <div><img src="img/20210914154803.png" alt=""></div>
+                                <h3>MS2090A</h3>
+                                <h4>별도 문의</h4>
+                            </a></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="OA"><a href="">
+                                <div><img src="img/20230621181152.png" alt=""></div>
+                                <h3>MTTPlus 410+</h3>
+                                <h4>별도 문의</h4>
+                            </a></div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </article>
+        </section>
+        
+        <section class="w1400 sec8">
+            <h2 class="main_tit">서비스 소개</h2>
+            <article>
+                <div>
+                    <h2>계약관리 서비스</h2>
+                    <p>간편한 견적문의, 계약인증을 통해 쉽고 빠른 <br> 온라인 계약관리 서비스를 제공합니다.</p>
+                    <div><img src="img/mService__item_v2_1.png" alt=""></div>
+                </div>
+                <div>
+                    <h2>커넥트프로 안내</h2>
+                    <p>업무용 차량 운행 이력 및 통합관제, 차계부 지원을 통한 <br> 법인 사용자 편의를 증대시킵니다.</p>
+                    <div><img src="img/mService__item_v2_2.png" alt=""></div>
+                </div>
+                <div>
+                    <h2>OA 매니저 안내</h2>
+                    <p>렌탈 OA기기에 대한 자산현황 및 장비 신청/반납까지 <br> 고객발주 시스템을 제공합니다.</p>
+                    <div><img src="img/mService__item_v2_3.png" alt=""></div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <section class="w100 fot1">
+            <article class="w1400">
+                <ul>
+                    <li><a href="">개인정보처리방침</a></li>
+                    <li><a href="">회사소개</a></li>
+                    <li><a href="">개인위치 및 위치기반서비스 이용약관</a></li>
+                    <li><a href="">영상정보처리기기 운영관리방침</a></li>
+                    <li><a href="">이용약관</a></li>
+                    <li><a href="">이메일 주소 무단 수집 거부</a></li>
+                    <li><a href="">CONTACT US</a></li>
+                </ul>
+            </article>
+        </section>
+        <section class="w1400 fot2">
+            <h2><img src="img/logo_bizccar_gray.png" alt=""></h2>
+            <div class="fot_info">
+                <ul>
+                    <li>롯데렌탈(주) 대표이사 최진환</li>
+                    <li>사업자등록번호 214-87-79183</li>
+                    <li>통신판매업신고번호 제2010-경기안양-420호
+                        <a class="info_link1" href="">사업자정보확인</a></li>
+                </ul>
+                <ul>
+                    <li>경기도 안양시 동안구 전파로 88 신원비젼타워 8층</li>
+                    <li>서울본사 서울시 강남구 테헤란로 422 KT타워 6~9층</li>
+                </ul>
+                <ul>
+                    <li>오토렌탈(자동차 관련문의) 대표번호 : 1588-1230</li>
+                    <li>
+                        일반상품렌탈(OA,측정기,물류장비 등) 대표번호:1577-5100</li>
+                </ul>
+                <ul>
+                    <li><a class="info_link2"  href="">대출성 금융상품판매대리ㆍ중개업자등록증</a></li>
+                </ul>
+            </div>
+            <div class="fot_txt">
+                <p>Copyright ⓒ LOTTE rental co.ltd. All Rights Reserved.</p>
+                <div>
+                    <ul>
+                        <li><a href="">롯데렌터카</a></li>
+                        <li><a href="">롯데렌터카<br>마이카</a></li>
+                        <li><a href="">롯데렌터카<br>마이카 멤버십</a></li>
+                        <li><a href="">롯데렌터카<br>마이카 세이브</a></li>
+                        <li><a href="">롯데오토글로벌</a></li>
+                        <li><a href="">롯데오토리스</a></li>
+                        <li><a href="">롯데오토케어</a></li>
+                        <li><a href="">그린카</a></li>
+                    </ul>
+                    <div class="family_btn">Lotte Family <span></span></div>
+                </div>
+            </div>
+        </section>
+        <section class="w100 fot3">
+            <div class="w1400">
+                <p>롯데렌터카 수상내역</p>
+                <ul>
+                    <li><a href=""><img src="img/btn-play.png" alt=""></a></li>
+                    <li><a href=""><img src="img/btn-pause.png" alt=""></a></li>
+                </ul>
+                <div class="awards">
+                    <div class="award1">
+                        <div><img src="img/cert04_icon.png" alt=""></div>
+                        <div>
+                            <h4>2021 퍼스트 브랜드 <br> 대상 1위</h4>
+                            <p>17년 연속 <br> 한국소비자포럼</p>
+                        </div>
+                    </div>
+                    <div class="award2">
+                        <div><img src="img/cert05_icon.png" alt=""></div>
+                        <div>
+                            <h4>2020 한국서비스 <br> 품질지수 1위(KS-SQI)</h4>
+                            <p>9년 연속 <br> 한국표준협회</p>
+                        </div>
+                    </div>
+                    <div class="award3">
+                        <div><img src="img/cert06_icon.png" alt=""></div>
+                        <div>
+                            <h4>2020 국가고객만족도 <br> 1위</h4>
+                            <p>6년 연속 <br> 한국생산성본부</p>
+                        </div>
+                    </div>
+                    <div class="award4">
+                        <div><img src="img/cert07_icon.png" alt=""></div>
+                        <div>
+                            <h4>2020 한국산업의 <br> 고객만족도 1위(KCSI)</h4>
+                            <p>5년 연속 <br> 한국능률협회</p>
+                        </div>
+                    </div>
+                    <div class="award5">
+                        <div><img src="img/cert08_icon.png" alt=""></div>
+                        <div>
+                            <h4>2015 한국서비스대상 <br> 명예의 전당 헌정</h4>
+                            <p>한국표준협회</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/bizcar_correct_re.js"></script>
+
+    <script>
+        var swiper = new Swiper(".sec1 .mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+            },
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            }
+        });
+
+        // 중간 슬라이드
+        var swiper = new Swiper(".sec3 .mySwiper", {
+            slidesPerView: "auto",
+            centeredSlides: true,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            }
+            });
+
+        function getDirection() {
+            var windowWidth = window.innerWidth;
+            var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+
+            return direction;
+        }
+        
+    </script>
+</body>
+</html>
